@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: all 0.5s ease;
+}
+
+body {
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+}
+
+.container {
+  width: 100%;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+  height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-list {
+  font-family: "Bungee", cursive;
+
+  display: flex;
+  justify-content: space-around;
+  top: 0;
+  background-color: transparent;
+  box-shadow: 0 0 20px #000000;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: rgb(108, 99, 255);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #131313;
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px #fff;
+}
+
+#welcome-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.content {
+  width: 30%;
+  margin-left: auto;
+}
+
+.content h1 {
+  font-family: "Bungee", cursive;
+  color: rgb(108, 99, 255);
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: rgb(47, 46, 65);
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.content button {
+  font-family: "Bungee", cursive;
+  color: rgb(230, 230, 230);
+  background-color: rgb(108, 99, 255);
+  box-shadow: 0 0 10px #131313;
+  font-size: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  margin-top: 50px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  transform: translateY(10px);
+  box-shadow: 10px 10px 20px #131313;
+}
+
+.image {
+  margin-top: 100px;
+  width: 50%;
+}
+
+.image img {
+  height: 600px;
+  box-shadow: 0 0 20px #13131380;
+  border-radius: 30px;
+  padding: 20px;
+  transform: rotate(1deg);
+  transition: all 0.5s ease;
+}
+
+.image img:hover {
+  transform: rotate(-2deg);
+  box-shadow: 0 0 0 100px #13131300;
+}
+
+#second-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 200px;
+  height: auto;
+  padding-top: 100px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 800px 800px;
+  gap: 50px;
+}
+
+.project01 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 400px;
+  width: 800px;
+  border-radius: 30px;
+  box-shadow: 0 0 50px rgba(107, 99, 255, 0.329);
+  transition: all 0.5s ease;
+}
+
+img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.746);
+}
+
+.contact_me {
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  /* background-color: #131313; */
+}
+#contact h1 {
+  display: flex;
+  font-family: "Bungee", cursive;
+  color: rgb(108, 99, 255);
+  font-size: 3rem;
+  background-color: transparent;
+  box-shadow: none;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+h1 {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  background-color: rgb(107, 99, 255);
+  box-shadow: 0 0 20px #1313135b;
+  width: 100%;
+  justify-content: center;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+footer a {
+  color: #fff;
+  width: 100%;
+}
+
+.fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  margin-left: 25%;
+  transition: all 0.3s ease;
+  z-index: 99;
+  /* background-color: black; */
+}
+
+.fa-github-alt::after {
+  font-family: "Montserrat", sans-serif;
+  content: "@leo-Mahesh";
+  /* margin-left: 5%; */
+  align-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.fa-codepen::after {
+  font-family: "Montserrat", sans-serif;
+  content: "@leo-Mahesh";
+  /* margin-left: 5%; */
+  align-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.fa-free-code-camp::after {
+  font-family: "Montserrat", sans-serif;
+  content: "@leo-Mahesh";
+  /* margin-left: 5%; */
+  align-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.fab:hover::after {
+  opacity: 1;
+  color: #131313;
+  font-weight: bold;
+  margin-left: 10%;
+  transform: translateX(10px);
+}
+
+@media screen and (max-width: 1000px) {
+  * {
+    transition: none;
+    transform: none;
+  }
+
+  #welcome-section {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  #second-page {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .projects {
+    grid-template-columns: 500px;
+    gap: 5px;
+  }
+
+  img {
+    height: 200px;
+    width: 400px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+    margin-right: 25%;
+  }
+
+  .fab {
+    margin-left: 0;
+    color: #131313;
+  }
+  .fa-github-alt::after {
+    font-family: "Montserrat", sans-serif;
+    content: "@leo-Mahesh";
+    margin-left: 5%;
+    align-content: center;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .fa-codepen::after {
+    font-family: "Montserrat", sans-serif;
+    content: "@leo-Mahesh";
+    margin-left: 5%;
+    align-content: center;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  .fa-free-code-camp::after {
+    font-family: "Montserrat", sans-serif;
+    content: "@leo-Mahesh";
+    margin-left: 5%;
+    align-content: center;
+    font-size: 1.5rem;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+}
